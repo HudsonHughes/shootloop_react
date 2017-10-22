@@ -1,0 +1,26 @@
+.item-1 {
+    grid-area: a;
+    justify-items: left;
+    align-items: center;
+    background-color: red;
+}
+
+.item-2 {
+    grid-area: b;
+    text-align: right;
+    background-color: orange;
+}
+
+.item-3 {
+    grid-area: c;
+    background-color: blue;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px auto;
+    grid-template-areas:    "a a a b b"
+                            "c c c c c";
+}
